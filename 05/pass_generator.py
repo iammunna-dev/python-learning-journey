@@ -16,7 +16,8 @@ rand_symbol=(random.choices(symbol,k=user_symbol))
 
 password=rand_letter+rand_number+rand_symbol
 random.shuffle(password)
-password="".join(str(x) for x in password)
+password="".join(str(x) for x in password)   ### If we had stored the numbers as strings, then we would not need to use the str(x) and for loop here to convert the whole password in string. We could have just write password="".join(password) instead.
+
 print(password)
 
 
