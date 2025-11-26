@@ -2,6 +2,8 @@
 
 import random
 
+'''
+
 letter=["A", "a", "B", "b", "c", "C", "D", "d", "E", "e", "F", "f", "G", "g", "H" , "h", "I", "i", "J", "j", "K", "k", "L", "l", "M", "m", "N", "n"]
 number=[0,1,2,3,4,5,6,7,8,9]
 symbol=["!","@","#","$","%","&","*","(",")","-","+","/","?","~"]
@@ -20,5 +22,17 @@ password="".join(str(x) for x in password)   ### If we had stored the numbers as
 
 print(password)
 
+'''
+
+
+###PASSWORD GENERATOR WITHOUT ANY SPECIFIC USE LIMIT ON THE LETTER,NUMBER ANF SYMBOL
+
+digits=["A", "a", "B", "b", "c", "C", "D", "d", "E", "e", "F", "f", "G", "g", "H" , "h", "I", "i", "J", "j", "K", "k", "L", "l", "M", "m", "N", "n","!","@","#","$","%","&","*","(",")","-","+","/","?","~","1","2","3","4","5","6","7","8","9"]
+
+user_number=int(input("How many digits you want in your password? :\n"))
+
+password= "".join(random.choices(digits, k=user_number))
+
+print(password)
 
 
